@@ -6,4 +6,6 @@ Project Task List
 - [x] 5. create projectroadmap
 - [ ] 6. Create search function
 - [ ] 7. Edit variable names in flask_app
-- [ ] 8. Add shots 
+- [ ] 8. Add a shots table
+- [ ] 9. Create users
+- [ ] 10. Add search by ingredients
