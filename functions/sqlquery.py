@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 
 data_url = 'classic_cocktails.csv'
-headers = ['first_name','last_name','address','city','state','zip']
+headers = ['drink_name','spirit','ingredient_1','ingredient_2','ingredient_3','garnish']
 data_table = pd.read_csv(data_url, header=None, names=headers,)
 
 # Clear example.db if it exists
@@ -15,12 +15,12 @@ conn = sqlite3.connect('drinks.db')
 
 # Add the data to our database
 data_table.to_sql('data_table', conn, dtype={
-    'first_name':'VARCHAR(256)',
-    'last_name':'VARCHAR(256)',
-    'address':'VARCHAR(256)',
-    'city':'VARCHAR(256)',
-	'state':'VARCHAR(2)',
-	'zip':'VARCHAR(5)',
+    'drink_name':'VARCHAR(256)',
+    'spirit':'VARCHAR(256)',
+    'ingredient_1':'VARCHAR(256)',
+    'ingredient_2':'VARCHAR(256)',
+	'ingredient_3':'VARCHAR(256)',
+	'garnish':'VARCHAR(556)',
 })
 
 conn.row_factory = sqlite3.Row
