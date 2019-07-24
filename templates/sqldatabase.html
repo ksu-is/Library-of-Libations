@@ -35,7 +35,7 @@
          <p>Ingredient 1: <input class="form-control" type = "text" name = "ingredient_1" style='width: 100%;' value='{{eresult["ingredient_1"]}}' /></p>
          <p>Ingredient 2: <input class="form-control" type = "text" name = "ingredient_2" style='width: 100%;' value='{{eresult["ingredient_2"]}}' /></p>
          <p>Ingredient 3: <input class="form-control" type ="text" name = "ingredient_3" style='width: 100%;' value='{{eresult["ingredient_3"]}}' /></p>
-         <p>Garnish: <input class="form-control" type ="text" name = "garnish" style='width: 100%;' value='{{eresult["ganrish"]}}' /></p>
+         <p>Garnish: <input class="form-control" type ="text" name = "garnish" style='width: 100%;' value='{{eresult["garnish"]}}' /></p>
          <!-- <input type ="hidden" name = "old_first_name" value='{{eresult["first_name"]}}' />
          <input type ="hidden" name = "old_last_name" value='{{eresult["last_name"]}}' /> -->
 
@@ -106,7 +106,7 @@
                <td>{{result["ingredient_1"]}}</td>
                <td>{{result['ingredient_2']}}</td>
                <td>{{result['ingredient_3']}}</td>
-               <td>{{result['ganrish']}}</td>
+               <td>{{result['garnish']}}</td>
                <td align="center"><a href = "{{ url_for('sql_editlink', edname=result['drink_name']) }}"><i class="fas fa-edit"></a></td>
                <td align="center"><a href = "{{ url_for('sql_datadelete', dname=result['drink_name']) }}"><i class="fas fa-trash-alt"></a></td>
             </tr>
